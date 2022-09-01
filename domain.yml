@@ -1,0 +1,111 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet_start
+- answer_howareyou
+- deny
+- affirm
+- choose_missioncard
+- choose_thingcard
+- choose_inputcard
+- choose_outputcard
+- greet_end
+
+responses:
+  utter_greet_start_howareyou:
+  - text: |
+      Hallo! Wie geht es dir?
+  - text: |
+      Hey du! Wie geht's dir?
+  utter_present:
+  - text: |
+      Ich bin Snappy und begleite dich auf deinem Abenteuer. Herzlich willkommen! 
+  - text: |
+      Herzlich willkommen! Ich bin Snappy und werde dich auf deinem Abenteuer begleiten.
+  utter_ask_explaintask:
+  - text: |
+      Soll ich dir erklären, was unsere Aufgabe sein wird?
+  utter_give_storyline:
+  - text: |
+      Hör gut zu! In unserer Stadt.... Möchtest du dabei helfen?
+  utter_ask_if_understood:
+  - text: |
+      Hast du alles verstanden?
+  utter_ask_if_questions:
+  - text: |
+      Hast du noch Fragen?
+  - text: |
+      Hast du noch eine Frage?
+  utter_explain_missioncards:
+  - text: |
+      Super! Es gibt vier Missionen... Welche Mission möchtest du aussuchen, eins, zwei, drei oder vier?
+  utter_accept_choice_missioncard:
+  - text: |
+      Super, gut gemacht! Dann gehen wir jetzt in den Park und kümmern uns zusammen um die Mission eins!
+  utter_explain_thingcards:
+  - text: |
+      Im Park sind verschiedene Dinge, die du für deine Mission benutzen kannst. Auf dem Bild siehst du, was dir zur Verfügung steht.
+  utter_challenge_choose_thingcard:
+  - text: |
+      Such dir ein Ding aus!
+  utter_accept_choice_thingcard:
+  - text: |
+      Super! Du arbeitest.... also mit einem Baum.
+  utter_explain_inputcards:
+  - text: |
+      Damit aus dem Baum ein smart thing wird, brauchen wir einen Sensor als input und ein Ausgabegerät. Auf dem Bild siehst du die verschiedenen Sensoren. Du kannst danach einen Sensor auswählen.
+  utter_challenge_choose_inputcard:
+  - text: |
+      Such dir einen Sensor aus!
+  utter_accept_choice_inputcard:
+  - text: |
+      Gut! Du arbeitest also mit dem Bewegungssensor.
+  utter_explain_outputcards:
+  - text: |
+      Jetzt brauchen wir noch ein Ausgabegerät. Auf dem nächsten Bild sind alle Geräte dargestellt, die du benutzen kannst.
+  utter_challenge_choose_outputcard:
+  - text: |
+      Such dir ein Ausgabegerät aus!
+  utter_accept_choice_outputcard:
+  - text: |
+      Super! Du arbeitest mit dem LED-Licht für die Ausgabe. 
+  utter_explain_whenthen:
+  - text: |
+      Damit dein smart thing funktioniert und wird die Mission erfolgreich beenden können, müssen wir input und output jetzt miteinander verknüpfen. 
+  utter_ask_ifsure:
+  - text: |
+      Bist du sicher?
+  utter_accept:
+  - text: |
+      Ok, kein Problem. Bis bald!
+  utter_greet_end:
+  - text: |
+      Tschuess!
+  - text: |
+      Aufwiedersehen!
+
+
+actions:
+- '...'
+- utter_greet_start_howareyou
+- utter_present
+- utter_ask_ifsure
+- utter_accept
+- utter_greet_end
+- utter_give_storyline
+- utter_ask_if_understood
+- utter_ask_if_questions
+- utter_explain_missioncards
+- utter_accept_choice_missioncard
+- utter_explain_thingcards
+- utter_challenge_choose_thingcard
+- utter_accept_choice_thingcard
+- utter_explain_inputcards
+- utter_challenge_choose_inputcard
+- utter_accept_choice_inputcard
+- utter_explain_outputcards
+- utter_challenge_choose_outputcard
+- utter_accept_choice_outputcard
+- utter_explain_whenthen

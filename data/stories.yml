@@ -1,0 +1,71 @@
+stories:
+
+ - story: short greeting and break asap
+   steps:
+   - intent: greet_start
+   - action: utter_greet_start_howareyou
+   - intent: answer_howareyou
+   - action: utter_present
+   - action: utter_ask_explaintask
+   - intent: deny
+   - action: utter_ask_ifsure
+   - intent: affirm
+   - action: utter_accept
+   - intent: greet_end
+   - action: utter_greet_end
+
+ - story: short greeting and break after storyline
+   steps:
+   - intent: greet_start
+   - action: utter_greet_start_howareyou
+   - intent: answer_howareyou
+   - action: utter_present
+   - action: utter_ask_explaintask
+   - intent: affirm
+   - action: utter_give_storyline
+   - intent: deny
+   - action: utter_ask_ifsure
+   - intent: affirm
+   - action: utter_accept
+   - intent: greet_end
+   - action: utter_greet_end
+
+
+ - story: greeting and present missions
+   steps:
+   - intent: greet_start
+   - action: utter_greet_start_howareyou
+   - intent: answer_howareyou
+   - action: utter_present
+   - action: utter_ask_explaintask
+   - intent: affirm
+   - action: utter_give_storyline
+   - intent: affirm
+   - action: utter_ask_if_understood
+   - intent: affirm
+   - action: utter_ask_if_questions
+   - intent: deny
+   - action: utter_explain_missioncards
+   - intent: choose_missioncard
+   - action: utter_accept_choice_missioncard
+   - action: utter_explain_thingcards
+   - action: utter_ask_if_understood
+   - intent: affirm
+   - action: utter_challenge_choose_thingcard
+   - intent: choose_thingcard
+   - action: utter_accept_choice_thingcard
+   - action: utter_explain_inputcards
+   - action: utter_ask_if_understood
+   - intent: affirm
+   - action: utter_challenge_choose_inputcard
+   - intent: choose_inputcard
+   - action: utter_accept_choice_inputcard
+   - action: utter_explain_outputcards
+   - action: utter_ask_if_understood
+   - intent: affirm
+   - action: utter_challenge_choose_outputcard
+   - intent: choose_outputcard
+   - action: utter_accept_choice_outputcard
+   - action: utter_explain_whenthen
+
+  

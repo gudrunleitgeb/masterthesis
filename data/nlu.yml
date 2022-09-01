@@ -1,0 +1,68 @@
+nlu:
+- intent: greet_start
+  examples: |
+    - Hoi
+    - Hey!
+    - Hallo
+    - Guten Morgen
+    - Guten Tag
+
+- intent: answer_howareyou
+  examples: |
+    - Gut
+    - Ok
+    - Okay
+    - Nicht so gut
+    - Sehr gut
+    - ich bin müde
+    - ganz okay
+
+- intent: deny
+  examples: |
+    - Nein
+    - No
+    - Jetzt nicht
+    - Auf keinen Fall
+
+- intent: affirm
+  examples: |
+    - Ja
+    - Ja, sicher
+    - Klar
+    - Natürlich
+    - passt
+    - ok
+    - okay
+
+- intent: greet_end
+  examples: |
+    - Tschuess
+    - Bye
+    - Ciao
+    - Aufwiedersehen
+
+- intent: choose_missioncard
+  examples: | 
+    - Ich nehme eins.
+    - Ich nehme zwei.
+    - eins
+    - zwei
+
+- intent: choose_thingcard
+  examples: | 
+    - Ich nehme den Baum
+    - Ich nehme Baum.
+    - Baum
+
+- intent: choose_inputcard
+  examples: | 
+    - Ich nehme den Bewegungssensor.
+    - Ich nehme Bewegungssensor.
+    - Bewegungssensor
+
+
+- intent: choose_outputcard
+  examples: | 
+    - Ich nehme das LED-Licht.
+    - Ich nehme LED-Licht.
+    - LED-Licht.
